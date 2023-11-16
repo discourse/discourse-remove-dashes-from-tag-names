@@ -1,0 +1,3 @@
+en:
+  theme_metadata:
+    description: "A theme component that removes dashes from tag names while displaying in topics"

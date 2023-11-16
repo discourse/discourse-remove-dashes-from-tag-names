@@ -1,0 +1,7 @@
+{
+  "author": "Faizaan Gagan",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "latest"
+  }
+}

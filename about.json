@@ -1,0 +1,8 @@
+{
+  "about_url": null,
+  "license_url": "https://github.com/discourse/discourse-remove-dashes-from-tag-names/blob/main/LICENSE",
+  "assets": {
+  },
+  "name": "Remove Dashes from Tag Names",
+  "component": true
+}
