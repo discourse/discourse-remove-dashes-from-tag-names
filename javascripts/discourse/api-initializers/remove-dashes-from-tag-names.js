@@ -21,7 +21,7 @@ export default apiInitializer("0.11.1", (api) => {
   api.replaceTagRenderer(customRenderer);
 
   Object.defineProperty(BaseTagSectionLink.prototype, "text", {
-    get: function () {
+    get() {
       let name = this.name;
       return name.replace(/-/g, " ");
     },
