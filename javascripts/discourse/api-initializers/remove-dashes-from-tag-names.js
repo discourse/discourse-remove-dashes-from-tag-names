@@ -22,8 +22,7 @@ export default apiInitializer("0.11.1", (api) => {
 
   Object.defineProperty(BaseTagSectionLink.prototype, "text", {
     get() {
-      let name = this.name;
-      return name.replace(/-/g, " ");
+      return this.name.replace(/-/g, " ");
     },
   });
 });
