@@ -2,6 +2,7 @@ import { typeOf } from "@ember/utils";
 import $ from "jquery";
 import { apiInitializer } from "discourse/lib/api";
 import { defaultRenderTag } from "discourse/lib/render-tag";
+import BaseTagSectionLink from "discourse/lib/sidebar/user/tags-section/base-tag-section-link";
 
 export default apiInitializer("0.11.1", (api) => {
   const customRenderer = (tag, params) => {
@@ -18,4 +19,10 @@ export default apiInitializer("0.11.1", (api) => {
   };
 
   api.replaceTagRenderer(customRenderer);
+
+  Object.defineProperty(BaseTagSectionLink.prototype, "text", {
+    get() {
+      return this.name.replace(/-/g, " ");
+    },
+  });
 });
