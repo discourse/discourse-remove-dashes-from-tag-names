@@ -4,7 +4,7 @@ import { apiInitializer } from "discourse/lib/api";
 import { defaultRenderTag } from "discourse/lib/render-tag";
 import BaseTagSectionLink from "discourse/lib/sidebar/user/tags-section/base-tag-section-link";
 
-export default apiInitializer("0.11.1", (api) => {
+export default apiInitializer((api) => {
   const customRenderer = (tag, params) => {
     const result = defaultRenderTag(tag, params);
     const text = $(result).html();
