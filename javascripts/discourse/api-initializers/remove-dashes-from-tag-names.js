@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-jquery */
 import { typeOf } from "@ember/utils";
 import $ from "jquery";
 import { apiInitializer } from "discourse/lib/api";
